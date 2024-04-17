@@ -22,16 +22,7 @@ const AdminPage = async () => {
           <AdminPostForm userId = {session.user.id} />
         </div>
       </div>
-      <div className={styles.row}>
-        <div className={styles.col}>
-          <Suspense fallback={<div>Loading...</div>}>
-            <AdminUsers />
-          </Suspense>
-        </div>
-        <div className={styles.col}>
-          <AdminUserForm />
-        </div>
-      </div>
+     
     </div>
   );
 };

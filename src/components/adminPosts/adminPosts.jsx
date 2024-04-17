@@ -8,7 +8,7 @@ const AdminPosts = async () => {
 
   return (
     <div className={styles.container}>
-      <h1>Posts</h1>
+      <h1>Club and Chapters</h1>
       {posts.map((post) => (
         <div className={styles.post} key={post.id}>
           <div className={styles.detail}>

@@ -47,7 +47,9 @@
   flex: 1;
   position: relative;
 }
-
+.cc{
+  color:#FD5722;
+}
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;

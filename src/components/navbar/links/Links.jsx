@@ -16,11 +16,7 @@ const links = [
     path: "/about",
   },
   {
-    title: "Contact",
-    path: "/contact",
-  },
-  {
-    title: "Blog",
+    title: "Clubs",
     path: "/blog",
   },
 ];
