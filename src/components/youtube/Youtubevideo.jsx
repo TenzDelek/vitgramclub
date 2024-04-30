@@ -1,6 +1,7 @@
 'use client'
 import YouTube from "react-youtube"; 
-export const Youtubevideo = () => {
+export const Youtubevideo = ({vids}) => {
+  console.log(vids)
     const opts = { 
         height: "250", 
         width: "500", 
@@ -10,7 +11,7 @@ export const Youtubevideo = () => {
       }; 
   return (
     <div>
-        <YouTube videoId="tBCVYV_2bFY" 
+        <YouTube videoId={vids}
             opts={opts} /> 
       </div> 
   )

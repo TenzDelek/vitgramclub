@@ -61,7 +61,7 @@ const SinglePostPage = async ({ params }) => {
         <div className={styles.event}>
           <p className={styles.evetext}>Clubs Youtube Activity</p>
           <div className={styles.videoclubs}>
-            <Youtubevideo/>
+            <Youtubevideo vids={post.vid}/>
           </div>
           
         </div>

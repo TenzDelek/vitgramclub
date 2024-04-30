@@ -4,11 +4,9 @@ import styles from "./blog.module.css";
 // FETCH DATA WITH AN API
 const getData = async () => {
   const res = await fetch("https://vitgramclub.vercel.app/api/blog", {next:{revalidate:3600}});
-
   if (!res.ok) {
     throw new Error("Something went wrong");
   }
-
   return res.json();
 };
 
