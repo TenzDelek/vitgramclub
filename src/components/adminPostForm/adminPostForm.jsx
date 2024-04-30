@@ -14,6 +14,7 @@ const AdminPostForm = ({userId}) => {
       <input type="text" name="title" placeholder="Club Name" />
       <input type="text" name="slug" placeholder="Short Form" />
       <input type="text" name="img" placeholder="image  eq: /image.png" />
+      <input type="text" name="vid" placeholder="Video" />
       <textarea type="text" name="desc" placeholder="Club Description" rows={10} />
       <button>Add</button>
       {state?.error}

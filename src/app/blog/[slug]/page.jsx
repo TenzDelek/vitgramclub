@@ -3,7 +3,7 @@ import styles from "./singlePost.module.css";
 import PostUser from "@/components/postUser/postUser";
 import { Suspense } from "react";
 import { getPost } from "@/lib/data";
-
+import { Youtubevideo } from "@/components/youtube/Youtubevideo";
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
   const res = await fetch(`https://vitgramclub.vercel.app/api/blog/${slug}`);
@@ -58,6 +58,13 @@ const SinglePostPage = async ({ params }) => {
           </div>
         </div>
         <div className={styles.content}>{post.desc}</div>
+        <div className={styles.event}>
+          <p className={styles.evetext}>Clubs Youtube Activity</p>
+          <div className={styles.videoclubs}>
+            <Youtubevideo/>
+          </div>
+          
+        </div>
       </div>
     </div>
   );

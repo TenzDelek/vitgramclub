@@ -42,6 +42,9 @@ const postSchema = new mongoose.Schema(
     img: {
       type: String,
     },
+    vid: {
+      type: String,
+    },
     userId: {
       type: String,
       required: true,
